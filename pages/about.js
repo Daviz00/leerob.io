@@ -4,7 +4,7 @@ import Container from '@/components/Container';
 
 const Talk = ({ title, link, children }) => (
   <>
-    <h3 className="font-medium mb-2 text-lg">
+    <h3 className="mb-2 text-lg font-medium">
       <a
         className="flex items-center text-gray-900 dark:text-gray-100"
         target="_blank"
@@ -14,7 +14,7 @@ const Talk = ({ title, link, children }) => (
         {title}
         <div>
           <svg
-            className="h-4 w-4 ml-1"
+            className="w-4 h-4 ml-1"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -30,20 +30,20 @@ const Talk = ({ title, link, children }) => (
         </div>
       </a>
     </h3>
-    <p className="text-gray-600 dark:text-gray-400 mb-8">{children}</p>
+    <p className="mb-8 text-gray-600 dark:text-gray-400">{children}</p>
   </>
 );
 
 export default function About() {
   return (
-    <Container title="About – Lee Robinson">
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-        <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
+    <Container title="About – Devansh Agarwal">
+      <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
+        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
           About Me
         </h1>
-        <div className="mb-8 prose leading-6 text-gray-600 dark:text-gray-400">
+        <div className="mb-8 leading-6 prose text-gray-600 dark:text-gray-400">
           <p>
-            Hey, I’m Lee. I'm a developer, writer, and the creator of&nbsp;
+            Hey, I’m Devansh. I'm a developer, writer, and the creator of&nbsp;
             <a
               href="https://masteringnextjs.com"
               target="_blank"
@@ -76,7 +76,7 @@ export default function About() {
             and family in Des Moines, IA.
           </p>
         </div>
-        <h2 className="font-bold text-3xl tracking-tight mb-4 text-black dark:text-white">
+        <h2 className="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white">
           Conference Talks
         </h2>
         <Talk
